@@ -18,5 +18,5 @@ spring:
         -id: clock-service
         uri: lb://clock-service
         predicates:
-          - Path=/schedules/**
+          - Path=/schedules/*
 
