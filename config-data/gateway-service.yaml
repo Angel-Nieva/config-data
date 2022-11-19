@@ -15,3 +15,8 @@ spring:
         locator:
           enabled: true
       routes:
+        -id: clock-service
+        uri: lb://clock-service
+        predicates:
+          - Path=/schedules/**
+
