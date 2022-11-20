@@ -9,7 +9,7 @@ eureka:
   instance:
     hostname: localhost
   server:
-    waitTimeInMsWhenSyncEmpty: 0 # Tiempo de espera para proxima sincronización
+    wait-time-in-ms-when-sync-empty: 0 # Tiempo de espera para proxima sincronización
   client: # No permite autoregistrarse como microservicio
     registerWithEureka: false
     fetchRegistry: false
