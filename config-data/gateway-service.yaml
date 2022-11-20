@@ -18,7 +18,11 @@ spring:
         - id: employee-service
           uri: lb://employee-service
           predicates:
-            - Path=/employees/**  
+            - Path=/employees/**
+        - id: justificative-service
+          uri: lb://justificative-service
+          predicates:
+            - Path=/justificative/**       
 
 eureka:
   client:

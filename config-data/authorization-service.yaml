@@ -1,22 +1,23 @@
 server:
-  port: 8083
+  port: 8084
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/justificativedb
+    url: jdbc:mysql://localhost:3306/authorizationdb
     username: root
     password: angel
   jpa:
     hibernate:
       ddl-auto: update
+
   application:
-    name: justificative-service
+    name: authorization-service
 
 eureka:
   client:
     fetch-registry: true
     register-with-eureka: true
-    service-url:
+    serviceUrl:
       default-zone: ${EUREKA_URL:http://localhost:8761/eureka}
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
