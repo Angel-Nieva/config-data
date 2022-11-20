@@ -20,3 +20,8 @@ spring:
         predicates:
           - Path=/schedules/**
 
+        -id: employee-service
+        uri: lb://employee-service
+        predicates:
+          - Path=/employees/**  
+
