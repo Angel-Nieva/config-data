@@ -10,6 +10,14 @@ spring:
     hibernate:
       ddl-auto: update
 
+  datasource:
+    url: jdbc:mysql://localhost:3306/planillaSueldodb
+    username: root
+    password: angel
+  jpa:
+    hibernate:
+      ddl-auto: update
+
   application:
     name: employee-service
 

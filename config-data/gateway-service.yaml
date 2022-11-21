@@ -13,11 +13,11 @@ spring:
         - id: schedule-service
           uri: lb://schedule-service
           predicates:
-            - Path=/schedules/**, /clocks/**
+            - Path=/schedules/**,/clocks/**
         - id: employee-service
           uri: lb://employee-service
           predicates:
-            - Path=/employees/**
+            - Path=/employees/**,/planillas/**
         - id: justificative-service
           uri: lb://justificative-service
           predicates:
