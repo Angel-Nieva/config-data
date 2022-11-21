@@ -14,7 +14,7 @@ spring:
           uri: lb://schedule-service
           predicates:
             - Path=/schedules/**
-            - Path/clocks/**
+            - Path=/clocks/**
 
         - id: employee-service
           uri: lb://employee-service
